@@ -2,6 +2,7 @@ import './App.css';
 import About from './components/About';
 import Contact from './components/Contact';
 import Content from './components/Content';
+import Experience from './components/Experience';
 import Footer from './components/Footer';
 import Hirebtn from './components/Hirebtn';
 import Navbar from './components/Navbar';
@@ -20,6 +21,7 @@ function App() {
 
       <Content/>
       <About/>
+      <Experience/>
       <Skills/>
       <Contact/>
       <Footer/>
