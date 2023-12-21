@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color:  rgb(210, 210, 215);
+    /* background-color: brown; */
+    transition: all 0.5s ease-in ;
+   
+   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+    display: none;
+}
+.image{
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLZZjw0UFZsQrczVCN04JYiJhwV9_pEBTaoaydLOKgpf5w6m4IGesNLVmEDGM6Xt4vDJw&usqp=CAU"); */
+    background-image: url("./components/Elements/Images/aakashimage.png");
+    background-size: cover;
+    width: 400px;
+    height:400px;
+    border: 1px solid;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    animation: morph 8s ease-in-out infinite;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hire{
+    /* z-index: 9999; */
+    animation: btnanimation 3s ease-in-out infinite;
+
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes btnanimation {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1.1);
+    }
+    45% {
+        transform: scale(1.2);
+    }
+    70% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#button{
+    transition: all 0.5s ease-in-out;
+}
+
+.hamburger{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
+.aboutimage{
+    width: 40%;
+}
+@media screen and (max-width:1024px) {
+    #intro , #about ,#skills,#project{
+        width: 85%;
+    }
+    .menu{
+
+    transition: all 1s ease-in-out;
+}
+
+
+}
+@media screen and (max-width:900px) {
+    #intro , .about {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        /* row-gap: 50px; */
+    }
+    .aboutimage{
+        width: 60%;
+    }
+    #intro{
+        top: 150px;
+    }
+    #about{
+        margin-top: 300px;
+    }
+
+}
+@media screen and (max-width:700px) {
+    .nav{
+        display: none;
+    }
+    .hamburger{
+        display: initial;
+    }
+    #project{
+        width: 100%;
+    }
+    .menu{
+        display: initial;
+    }
+  /* .skill{
+    margin-top: 50px;
+  } */
+  .aboutimage{
+    width: 80%;
+}
+  
+
+}
+
+@media screen and (max-width:480px){
+    .navbar{
+        padding:20px;
+    }
+    .image{
+        width: 70vw;
+        height: 70vw;
+    }
+    #skills{
+        width: 100%;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .name{
+        font-size: 1.5rem;
+        gap: 20px;
+      }
+      .aboutimage{
+        width: 80%;
+    }
+    .hire {
+        bottom: 20px;
+        right: 20px;
+    }
+    .contact{
+        max-width: 70%;
+    }
 }
