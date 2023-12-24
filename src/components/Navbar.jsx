@@ -20,9 +20,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div
-      className=" font-bold navbar flex justify-between text-xl items-center p-[30px] w-[100%] fixed top-0 left-0 right-0 z-10  bg-blue-500 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]"
-    >
+    <div className=" font-bold navbar flex justify-between text-xl items-center p-[30px] w-[100%] fixed top-0 left-0 right-0 z-10  bg-blue-500 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]">
       <h1 className="text-white text-3xl logo">{name}</h1>
       <div className="nav ">
         <ul className="flex gap-5 ">
