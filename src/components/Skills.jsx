@@ -14,9 +14,9 @@ import Projects from "./Projects";
 
 import blog from "./Elements/Images/blog-app.png";
 import note from "./Elements/Images/Note-keep.png";
-import news from "./Elements/Images/news.png";
-import gym from "./Elements/Images/gym.png";
-import gif from "./Elements/Images/gif.png";
+// import news from "./Elements/Images/news.png";
+// import gym from "./Elements/Images/gym.png";
+// import gif from "./Elements/Images/gif.png";
 import car from "./Elements/Images/car.png";
 
 const Skills = () => {
