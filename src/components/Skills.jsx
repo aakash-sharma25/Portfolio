@@ -14,9 +14,10 @@ import Projects from "./Projects";
 
 import blog from "./Elements/Images/blog-app.png";
 import note from "./Elements/Images/Note-keep.png";
-// import weather from "./Elements/Images/weather.png"
 import news from "./Elements/Images/news.png";
+import gym from "./Elements/Images/gym.png";
 import gif from "./Elements/Images/gif.png";
+import car from "./Elements/Images/car.png";
 
 const Skills = () => {
   return (
@@ -46,7 +47,14 @@ const Skills = () => {
         <h1>PROJECTS</h1>
       </div>
 
-      <div className="flex flex-wrap items-center justify-center mx-auto gap-[50px] w-[80%] mx-auto ">
+      <div className="flex flex-wrap items-center justify-center gap-[50px] w-[80%] mx-auto ">
+        <Projects
+          image={car}
+          title="Car Rental"
+          decprition="The MERN Stack Car Rental Website is a user-friendly web application designed for seamless car rentals. Users can register, login, browse available cars, make reservations, and securely complete payments. The platform ensures security with protected routes for users and admins. Administrators have tools to add new cars, update details, and manage reservations, ensuring efficient fleet management. Featuring a responsive design, the website provides an excellent experience across all devices. This application offers a streamlined solution for car rentals, catering to the needs of both users and administrators effectively. "
+          Githublink="https://github.com/aakash-sharma25/Rent_Car"
+          Projectlink="https://rent-car-c2nq.onrender.com/"
+        />
         <Projects
           image={blog}
           title="Blog App"
@@ -55,21 +63,14 @@ const Skills = () => {
           Projectlink="https://tech-diaries.onrender.com/all-blogs"
         />
 
-        <Projects
-          image={note}
-          title="Note App"
-          decprition="The note-keeping website is a simple and efficient tool built with HTML, CSS, and JavaScript. It utilizes the local storage feature of web browsers to securely store notes directly on the user's device. Users can create and save their notes, which will persist even if they refresh or close the browser. The website also includes features like archiving notes, allowing users to organize their active and archived notes separately. Additionally, users have the option to delete any unwanted notes. With its clean and responsive design, this website offers a user-friendly interface for managing notes effectively."
-          Githublink="https://github.com/aakash-sharma25/Note-keep"
-          Projectlink="https://aakash-sharma25.github.io/Note-keep/"
-        />
 
-        <Projects
+        {/* <Projects
           image={news}
           title="News App"
           decprition="The React.js-powered news website fetches news from an API and displays them in different categories. Users can explore top news stories across various topics like politics, sports, entertainment, and technology. The website includes a search function for finding specific articles, pagination for easy navigation, and a responsive design for optimal viewing on different devices. Overall, it offers a user-friendly and dynamic platform for staying updated with the latest news."
           Githublink="https://github.com/aakash-sharma25/News-App"
           Projectlink="https://www.linkedin.com/posts/aakash25_frontenddeveloper-webdeveloper-webdevelopment-activity-7084109736635236353-KJU8?utm_source=share&utm_medium=member_desktop"
-        />
+        /> */}
 
         {/* <Projects
           image={weather}
@@ -81,30 +82,44 @@ const Skills = () => {
 
         /> */}
 
+        {/* <Projects
+          image={gym}
+          title="Fitness Spot"
+          decprition="GifHub is a ReactJS-based website that offers a seamless gif experience. It features a random gif generator that surprises users with a continuous stream of animated gifs from various categories. Additionally, users can enter specific tags or keywords to generate personalized gifs based on their input. GifHub's intuitive interface and minimalist design make it easy to navigate and share favorite gifs on social media. Get ready to explore the exciting world of gifs with GifHub!."
+          Githublink="https://github.com/aakash-sharma25/GYM-Website"
+          Projectlink="https://the-fitness-spot.netlify.app//"
+        /> */}
         <Projects
+          image={note}
+          title="Note App"
+          decprition="The note-keeping website is a simple and efficient tool built with HTML, CSS, and JavaScript. It utilizes the local storage feature of web browsers to securely store notes directly on the user's device. Users can create and save their notes, which will persist even if they refresh or close the browser. The website also includes features like archiving notes, allowing users to organize their active and archived notes separately. Additionally, users have the option to delete any unwanted notes. With its clean and responsive design, this website offers a user-friendly interface for managing notes effectively."
+          Githublink="https://github.com/aakash-sharma25/Note-keep"
+          Projectlink="https://aakash-sharma25.github.io/Note-keep/"
+        />
+        {/* <Projects
           image={gif}
           title="Random GIF"
           decprition="GifHub is a ReactJS-based website that offers a seamless gif experience. It features a random gif generator that surprises users with a continuous stream of animated gifs from various categories. Additionally, users can enter specific tags or keywords to generate personalized gifs based on their input. GifHub's intuitive interface and minimalist design make it easy to navigate and share favorite gifs on social media. Get ready to explore the exciting world of gifs with GifHub!."
           Githublink=" "
           Projectlink="https://gif-loader.netlify.app/"
-        />
+        /> */}
       </div>
       <div className="flex gap-4 items-center justify-center my-10">
         <p>
           For more project visit
           {/* <Button name="Github" link="https://github.com/aakash-sharma25"/> */}
-         
-        </p> <a
-            href="https://github.com/aakash-sharma25"
-            // className="p-2 m-2 bg-blue-500 border-1 rounded-md text-white hover:bg-blue-600"
+        </p>{" "}
+        <a
+          href="https://github.com/aakash-sharma25"
+          // className="p-2 m-2 bg-blue-500 border-1 rounded-md text-white hover:bg-blue-600"
+        >
+          <button
+            id="button"
+            className="transition ease-in-out delay-150 p-3 rounded-lg hover:bg-blue-500 hover:text-white shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]"
           >
-            <button
-              id="button"
-              className="transition ease-in-out delay-150 p-3 rounded-lg hover:bg-blue-500 hover:text-white shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]"
-            >
-              Github <FaGithub />{" "}
-            </button>
-          </a>
+            Github <FaGithub />{" "}
+          </button>
+        </a>
       </div>
     </div>
   );
