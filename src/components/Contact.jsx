@@ -14,7 +14,7 @@ const Contact = () => {
         </div>
         <div className='flex gap-x-10'>
             <Hirebtn  name="Conatct Me" link="https://www.linkedin.com/in/aakash25/" />
-            <Button name="Download Resume" link="https://drive.google.com/file/d/1ckpehXE--QHa4v13hr6KhaXf7ZV0YSyT/view?usp=sharing"/>
+            <Button name="Download Resume" link="https://drive.google.com/file/d/13gA0b_lmvgdZ9QAr44YFlKwnVPlNlzCJ/view?usp=drive_link"/>
         </div>
     </div>
   )
