@@ -14,7 +14,7 @@ import Projects from "./Projects";
 
 import blog from "./Elements/Images/blog-app.png";
 import note from "./Elements/Images/Note-keep.png";
-// import news from "./Elements/Images/news.png";
+import gadget from "./Elements/Images/gadget.png";
 // import gym from "./Elements/Images/gym.png";
 // import gif from "./Elements/Images/gif.png";
 import car from "./Elements/Images/car.png";
@@ -50,11 +50,20 @@ const Skills = () => {
       <div className="flex flex-wrap items-center justify-center gap-[50px] w-[80%] mx-auto ">
         <Projects
           image={car}
-          title="Car Rental"
+          title="Rent It"
           decprition="The MERN Stack Car Rental Website is a user-friendly web application designed for seamless car rentals. Users can register, login, browse available cars, make reservations, and securely complete payments. The platform ensures security with protected routes for users and admins. Administrators have tools to add new cars, update details, and manage reservations, ensuring efficient fleet management. Featuring a responsive design, the website provides an excellent experience across all devices. This application offers a streamlined solution for car rentals, catering to the needs of both users and administrators effectively. "
           Githublink="https://github.com/aakash-sharma25/Rent_Car"
           Projectlink="https://rent-car-c2nq.onrender.com/"
         />
+
+        <Projects
+          image={gadget}
+          title="Gadget Galaxy"
+          decprition="The MERN Stack E-commerce Project is a dynamic web application designed for users to explore and purchase a variety of products. The application offers secure registration and login, with pages protected by authentication to ensure a personalized shopping experience. Admins have their own protected routes, allowing them to manage the store efficiently by adding, updating, and deleting products. They can also monitor and update the status of products in real-time. With a responsive design and user-friendly interface, this e-commerce platform provides seamless browsing."
+          Githublink="https://github.com/aakash-sharma25/Gadget-Galaxy"
+          Projectlink="https://gadget-galaxy-fnh1.onrender.com/"
+        />
+
         <Projects
           image={blog}
           title="Blog App"
@@ -62,7 +71,6 @@ const Skills = () => {
           Githublink="https://github.com/aakash-sharma25/Blog-App"
           Projectlink="https://tech-diaries.onrender.com/all-blogs"
         />
-
 
         {/* <Projects
           image={news}
