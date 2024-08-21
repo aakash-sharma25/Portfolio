@@ -37,7 +37,7 @@ const Content = () => {
           </div>
           <Button
             name="Download Resume"
-            link="https://drive.google.com/file/d/1xK47L3esvDtyDqp9rfyfpJ9ZWqN4xhsC/view?usp=sharing"
+            link="https://drive.google.com/file/d/13gA0b_lmvgdZ9QAr44YFlKwnVPlNlzCJ/view?usp=drive_link"
           />
         </div>
         <div className="mt-10 cursor-pointer">
